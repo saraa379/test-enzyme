@@ -25,6 +25,12 @@ describe('Calc component test suite', () => {
 		const h2 = <h2>Component Räknare</h2>;
 		expect( wrapper.contains(h2)).toBe(true);
 	})
+/*
+	test('Calc contains div .calcWrap', () => {
+	    let wrapper = shallow(<Calc />);
+	    expect(wrapper.find('.calcWrap').length).to.equal(1);
+	})*/
+
 
 /*
 	test('state from false to true when clicked', () => {
