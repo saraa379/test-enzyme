@@ -1,0 +1,42 @@
+.calcWrap {
+    position: relative;
+    min-height: 100px;
+    width: 50%;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 55px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.buttons {
+    margin-top: 10px;
+}
+.buttons:first-child {
+    margin-right: 3px;
+}
+button {
+    height: 32px;
+    width: 80px;
+    color: white;
+    background-color: grey;
+    font-size: 1.2rem;
+    border: 2px solid white;
+    font-weight: bold;
+}
+input {
+    height: 25px;
+    border: 1px solid grey;
+    padding: 7px;
+}
+
+/*Media queries*/
+@media screen and (max-width: 500px){
+    .calcWrap {
+        width: 80%;
+    }
+}/*end of 500*/
+@media screen and (max-width: 300px){
+    .calcWrap {
+        width: 100%;
+    }
+}/*end of 200*/
