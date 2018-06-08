@@ -51,7 +51,7 @@ class Calc extends Component {
 	render() {
 		return (
 			<div className="calcWrap">
-					<h2>Component Räknare</h2>
+					<h2>Räknare</h2>
 					<div className="formDiv">
 								<input type="text" value={this.state.value} onChange={this.handleChange} onClick={this.clear}/>
 								<div className="buttons">

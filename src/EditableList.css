@@ -1,0 +1,76 @@
+.editWrap {
+    position: relative;
+    min-height: 100px;
+    width: 50%;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 55px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.formEdit {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+#btnAdd {
+    height: 32px;
+    width: 130px;
+    color: white;
+    background-color: grey;
+    font-size: 1.2rem;
+    border: 2px solid white;
+    font-weight: normal;
+    margin: auto;
+    margin-top: 10px;
+}
+#inputList {
+    height: 25px;
+    width: 128px;
+    border: 1px solid grey;
+    padding: 7px;
+    margin: auto;
+}
+.listDiv {
+    margin-top: 30px;
+    text-align: left;
+}
+.item {
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+    background-color: #F5F5F5;
+    border: 2px solid #D8D8D8;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+p {
+    display: inline;
+}
+.delete {
+    height: 40px;
+    width: 40px;
+    color: white;
+    background-color: grey;
+    font-size: 0.8rem;
+    border: 2px solid white;
+    font-weight: bold;
+
+}
+
+/*Media queries*/
+@media screen and (max-width: 500px){
+    .editWrap {
+        width: 80%;
+    }
+}/*end of 500*/
+@media screen and (max-width: 300px){
+    .editWrap {
+        width: 100%;
+    }
+}/*end of 200*/
