@@ -21,8 +21,11 @@ class EditableList extends Component {
 					this.setState({value: ''});
 			}
 	}
-	delete(index) {
-			console.log("delete button clicked: " + index);
+	delete(i) {
+			//console.log("delete button clicked: " + i);
+			var tempList = this.state.listEd;
+			tempList.splice(i, 1); //removes array item by given index, 1 means 1 item will be removed
+			this.setState({listEd: tempList});
 	}
 
 
@@ -32,10 +35,10 @@ class EditableList extends Component {
 				var listItems = this.state.listEd.map((item, index) =>
 						<div className="item" key={index}>
 								<p>{item}</p>
-								<button className="delete" onClick={(index) => this.delete()}>X</button>
+								<button className="delete" onClick={event => this.delete(index)}>X</button>
 						</div>
 				);
-		}
+		}//end of if
 
 		return (
 			<div className="editWrap">
