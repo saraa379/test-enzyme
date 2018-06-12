@@ -24,7 +24,6 @@ class Minesweeper extends Component {
 								 ], result: 0};
 		this.handleClick = this.handleClick.bind(this);
 		this.restart = this.restart.bind(this);
-		this.delete = this.delete.bind(this);
 	}
 
 	componentDidMount() {
@@ -49,23 +48,9 @@ class Minesweeper extends Component {
 			}
 			this.setState({listBox: list});
 	}
-	delete(i) {
-
-	}
 
 
 	render() {
-		//creating list of div from list setState
-		/*
-		if(this.state.listEd !== []){
-				var listItems = this.state.listEd.map((item, index) =>
-						<div className="item" key={index}>
-								<p>{item}</p>
-								<button className="delete" onClick={event => this.delete(index)}>X</button>
-						</div>
-				);
-		}//end of if
-*/
 		return (
 			<div className="mineWrap">
 					<h2>Minröjning</h2>
