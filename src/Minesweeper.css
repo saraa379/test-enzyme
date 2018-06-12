@@ -1,0 +1,53 @@
+.mineWrap {
+    position: relative;
+    min-height: 100px;
+    width: 50%;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 55px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.minesweeper {
+    position: relative;
+    margin: 30px auto;
+    text-align: center;
+    width: 272px;
+    height: 285px;
+    border: 2px solid grey;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+.box {
+    background-color: grey;
+    border: 2px solid #D8D8D8;
+    width: 67px;
+    height: 67px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.open {
+    background-color: white;
+}
+.mine {
+    background-color: red;
+}
+.invincible {
+  display: none;
+}
+
+
+/*Media queries*/
+@media screen and (max-width: 500px){
+    .mineWrap {
+        width: 80%;
+    }
+}/*end of 500*/
+@media screen and (max-width: 300px){
+    .mineWrap {
+        width: 100%;
+    }
+}/*end of 200*/

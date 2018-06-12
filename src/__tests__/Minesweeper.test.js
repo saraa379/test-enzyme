@@ -2,16 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {shallow} from 'enzyme';
 import { mount } from 'enzyme';
-import EditableList from '../EditableList.js';
+import Minesweeper from '../Minesweeper.js';
 
 
 describe('Shallow rendering test suite', () => {
 
-	it('Smoke test: Calc component renders without crashing', () => {
+	it('Smoke test: Minesweeper component renders without crashing', () => {
 		const div = document.createElement('div');
-		ReactDOM.render(<EditableList />, div);
+		ReactDOM.render(<Minesweeper />, div);
 		ReactDOM.unmountComponentAtNode(div);
 	})
+	/*
 	test('div editWrap is present', () => {
 		let wrapper = shallow(<EditableList />);
 		expect(wrapper.find('.editWrap')).toHaveLength(1);
@@ -37,10 +38,10 @@ describe('Shallow rendering test suite', () => {
 		let wrapper = shallow(<EditableList />);
 		wrapper.setState({ listEd: ['aaaa', 'bbbbb'] });
 		expect(wrapper.find('.listDiv')).toHaveLength(1);
-	})
+	})*/
 
 })//end of Calc komponent test suite
-
+/*
 describe('List rendering test suite', () => {
 
 	test('Div item is present when state.listEd has elements with right key', () => {
@@ -117,7 +118,7 @@ describe('Events test suite', () => {
 
 })//end of Calc komponent test suite
 
-
+*/
 
 
 
