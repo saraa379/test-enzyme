@@ -7,7 +7,7 @@ import EditableList from '../EditableList.js';
 
 describe('Shallow rendering test suite', () => {
 
-	it('Smoke test: Calc component renders without crashing', () => {
+	it('Smoke test:  EditableList component renders without crashing', () => {
 		const div = document.createElement('div');
 		ReactDOM.render(<EditableList />, div);
 		ReactDOM.unmountComponentAtNode(div);

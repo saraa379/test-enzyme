@@ -1,0 +1,108 @@
+Kod granskning: Albin Engman
+
+Räknare
+1.	Har ni testat samma saker?
+	Följande testfall hade vi genemsamma:
+        
+	Elements render
+	- Smoke test: Calculator component renders without crashing
+	- Input is present
+	- plusButton is present
+	- minusButton is present
+	- wrapper div is present
+		display is present (Ang)
+		div formDiv is present (Min)
+
+	Counter
+	- initial state test: states have their default values
+	- plus button works as it should: 1 to 2 when + button clicked
+	- minus button works as it should
+	- input works as it should
+	- input state value doesn't change for string as input
+		
+
+2.	Vilka är de viktigaste testfallen? Varför är de viktiga?
+
+	De viktigaste testfallen är: 
+	- html elementer renderar utan att krascha. För att systemets funktioner är beroende av html elementer.
+	  Till exempel: om plus knappen inte renderar, då increase value funktionalitet kan inte användas.
+	- correct input ger rätt svar. För att det ät systemets huvud funktionalitet.
+	- string input doesn't change previous value. För att det är en av systemets krav.
+	
+
+3.	Finns det några onödiga testfall i deras kod? Varför är de onödiga?
+	Jag hittade inga onödiga testfall.
+
+
+
+
+Redigerbar Lista
+1.	Har ni testat samma saker?
+	Följande testfall hade vi genemsamma:
+        
+	Elements render
+	- Smoke test: List component renders without crashing
+	- addButton is present
+	- listInput is present
+	- minusButton is present
+	- wrapper div is present
+		display is present (Ang)
+		div formDiv is present (Min)
+
+	List test
+	- initial state test: states have their default values
+	- add button adds to list
+	- input function works as it should
+	- delete button removes from list
+	- delete button removes correct item
+
+2.	Vilka är de viktigaste testfallen? Varför är de viktiga?
+
+	De viktigaste testfallen är: 
+	- html elementer renderar utan att krascha. Här behöver man testa med inte bara shallow test, utan också
+	  behöver mount testa list items för att de renderar inte när man shallow renderar parent komponenten.
+	- Add button adds item to the list. För att det ät systemets huvud funktionalitet.
+	- Delete button removes right item from the list. För att det ät systemets huvud funktionalitet. 
+
+	
+3.	Finns det några onödiga testfall i deras kod? Varför är de onödiga?
+	I hans ComponentList.js, add funktionen kollar om alla värdet i listan är sträng.
+	Därför han har en rad testar som testar om list item är objekt, array, number, null och undefined.
+	Jag är inte säkert om den är nödigt eftersom allting som kommer i inputfält är sparas som sträng.
+
+
+
+Transformera text - Minröjning
+1.	Har ni testat samma saker?
+	Vår tredje komponent var olika. Han implementerade komponenten Transformera text och 
+	jag görde komponenten Minröjning. Så vår funktioner var olika.
+	
+	I generallt följande testfall hade vi genemsamma:
+        
+	Elements render
+	- Smoke test: ComponentTransform renders without crashing
+	- HTML elemnts are present
+
+	Counter
+	- initial state test: states have their default values
+	- systems functions are working as it should
+	
+	
+
+2.	Vilka är de viktigaste testfallen? Varför är de viktiga?
+
+	De viktigaste testfallen är: 
+	- html elementer renderar utan att krascha. De är:
+	    - Component renders without error
+	    - functions work as they should. För att de är systemets krav.
+                     second transform works as it should
+		     first transform works as it should
+		     third transform works as it should
+		     third transform works only with numbers
+
+	
+	  
+
+3.	Finns det några onödiga testfall i deras kod? Varför är de onödiga?
+
+	Jag hittade inga onödiga testfall i test suite för den här komponenten.
