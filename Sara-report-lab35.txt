@@ -24,9 +24,9 @@ Räknare
 2.	Vilka är de viktigaste testfallen? Varför är de viktiga?
 
 	De viktigaste testfallen är: 
-	- html elementer renderar utan att krascha. För att systemets funktioner är beroende av html elementer.
-	  Till exempel: om plus knappen inte renderar, då increase value funktionalitet kan inte användas.
-	- correct input ger rätt svar. För att det ät systemets huvud funktionalitet.
+	- html elementen renderar utan att krascha. För att systemets funktioner är beroende av html elementen.
+	  Till exempel: om plus knappen inte renderar, då kan increase value funktionalitet inte användas.
+	- correct input ger rätt svar. För att det är systemets huvud funktionalitet.
 	- string input doesn't change previous value. För att det är en av systemets krav.
 	
 
@@ -59,27 +59,27 @@ Redigerbar Lista
 2.	Vilka är de viktigaste testfallen? Varför är de viktiga?
 
 	De viktigaste testfallen är: 
-	- html elementer renderar utan att krascha. Här behöver man testa med inte bara shallow test, utan också
+	- html elementen renderar utan att krascha. Här behöver man testa med inte bara shallow test, utan också
 	  behöver mount testa list items för att de renderar inte när man shallow renderar parent komponenten.
-	- Add button adds item to the list. För att det ät systemets huvud funktionalitet.
-	- Delete button removes right item from the list. För att det ät systemets huvud funktionalitet. 
+	- Add button adds item to the list. För att det är systemets huvud funktionalitet.
+	- Delete button removes right item from the list. För att det är systemets huvud funktionalitet. 
 
 	
 3.	Finns det några onödiga testfall i deras kod? Varför är de onödiga?
 	I hans ComponentList.js, add funktionen kollar om alla värdet i listan är sträng.
 	Därför han har en rad testar som testar om list item är objekt, array, number, null och undefined.
-	Jag är inte säkert om den är nödigt eftersom allting som kommer i inputfält är sparas som sträng.
+	Jag är inte säkert om den är nödvändig eftersom allting som kommer i inputfält sparas som sträng.
 
 
 
 Transformera text - Minröjning
 1.	Har ni testat samma saker?
 	Vår tredje komponent var olika. Han implementerade komponenten Transformera text och 
-	jag görde komponenten Minröjning. Så vår funktioner var olika.
+	jag gjorde komponenten Minröjning. Så våra funktioner var olika.
 	
-	I generallt följande testfall hade vi genemsamma:
+	Följande testfall hade vi genemsamma:
         
-	Elements render
+	HTML elementen renderar
 	- Smoke test: ComponentTransform renders without crashing
 	- HTML elemnts are present
 
@@ -92,9 +92,9 @@ Transformera text - Minröjning
 2.	Vilka är de viktigaste testfallen? Varför är de viktiga?
 
 	De viktigaste testfallen är: 
-	- html elementer renderar utan att krascha. De är:
+	- html elementen renderar utan att krascha. De är:
 	    - Component renders without error
-	    - functions work as they should. För att de är systemets krav.
+	    - Functions work as they should. För att de är systemets krav.
                      second transform works as it should
 		     first transform works as it should
 		     third transform works as it should

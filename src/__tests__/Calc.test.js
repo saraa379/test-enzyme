@@ -106,8 +106,7 @@ describe('Events test suite', () => {
 	test('if clear: true & value: 3 =>  clear: false & temp: 3', () => {
 			let wrapper = shallow(<Calc />);
 			let input = wrapper.find('input').at(0);
-			wrapper.setState({ value: 3 });
-			wrapper.setState({ clear: true });
+			wrapper.setState({ value: 3, clear: true });
 			input.simulate('click');
 			expect( wrapper.state('temp') ).toBe(3);
 			expect( wrapper.state('clear') ).toBe(false);
