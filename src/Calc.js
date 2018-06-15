@@ -42,9 +42,7 @@ class Calc extends Component {
 	}
 	clear(event){
 		if (this.state.clear === true) {
-				this.setState({temp: this.state.value});
-				this.setState({value: ''});
-				this.setState({clear: false});
+				this.setState({temp: this.state.value, value: '', clear: false});
 		}
 	}
 

@@ -16,6 +16,7 @@ class EditableList extends Component {
 	add(event) {
 			if(this.state.value !== ''){
 					var tempList = this.state.listEd;
+					// [...this.state.listEd, this.state.value]
 					tempList.push(this.state.value);
 					this.setState({listEd: tempList});
 					this.setState({value: ''});
@@ -31,8 +32,9 @@ class EditableList extends Component {
 
 	render() {
 		//creating list of div from list setState
+		let listItems = null;
 		if(this.state.listEd !== []){
-				var listItems = this.state.listEd.map((item, index) =>
+				listItems = this.state.listEd.map((item, index) =>
 						<div className="item" key={index}>
 								<p>{item}</p>
 								<button className="delete" onClick={event => this.delete(index)}>X</button>

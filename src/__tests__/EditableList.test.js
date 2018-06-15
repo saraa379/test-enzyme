@@ -100,7 +100,7 @@ describe('Events test suite', () => {
 			expect( wrapper.state('value') ).toBe('');
 			expect( wrapper.state('listEd') ).toEqual([]);
 	})
-	test('btnDelete removes first item from lisEd', () => {
+	test('btnDelete removes first item from listEd', () => {
 			let wrapper = mount(<EditableList />);
 			wrapper.setState({ listEd: ['aaaa', 'bbbb'] });
 			let btnDelete = wrapper.find('.delete').at(0);
